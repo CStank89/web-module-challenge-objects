@@ -39,7 +39,16 @@ and should return a number.
 
 For example, burger.discount("teacher") would return 13.5 and burger.discount("public") would return 16.2*/
 
+burger.discount = function(teacher, student, public){
+  if (teacher || student){
+    return price * .75;
+  }
+  else if (public){
+    return price * .90;
+  }
+}
 
+console.log(burger.discount());
 
 ///////////////Reviews (MVP)///////////////////
 
@@ -74,7 +83,7 @@ console.log(newRating('Christopher', 3, 'It was a very nice place'));
 /* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"*/
 
 console.log(reviews)
-console.log(reviews[feedback]);
+console.log(reviews[7]);
 
 
 /*  Task 6: Write a function to return a review based on the index of the review in the array.
@@ -89,9 +98,14 @@ and should return a string in the format `{name} gave the restaurant a {rating},
  * For example, if getReviewByIndex is invoked with reviews and the number 0
  * it will return `Daniela gave the restaurant a 5 star review and their feedback was: Beautiful atmosphere and wonderful vegan options!`
 */
-function getReviewByIndex(reviews, index) {
-}
+
+
+// function getReviewByIndex(reviews, index) {
+//   return '${.name} gave the resturant a ${.rating}, and their feed back was: ${.feedback}';
   
+// }
+
+// console.log(getReviewByIndex());
 
 /* Task 7: Write a function to get information about the most recent review called `getLastReview`
 
@@ -102,10 +116,11 @@ and should return a string in the format `name} gave the restaurant a {rating}, 
 
 For example, if getLastReview is invoked passing the reviews array it will return `Reyna gave the restaurant a 3.5 star review and their feedback was: "this place is chill with really cool people, great for getting work done on weekdays"`.
 */
-function getLastReview(/* code here */) {
-    /* code here */
+function getLastReview(arr) {
+    arr.lastIndexOf(reviews);
+    return `{name} gave the restaurant a {rating}, and their feedback was: {feedback}`; 
   } 
-
+console.log((lastIndexOf));
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
 
