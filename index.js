@@ -15,19 +15,17 @@ const breakfastBurrito = {
 
 /* Task 1a: write a function to return more menu items with the same format as the items above. */
 
-function createMenuItem(name, cost, category){
-  let newitem = {
-    name: name,
-    price: cost,
-    category: category,
 
-  }
-
-}
-console.log(createMenuItem);
+function createMenuItem(name, price, category){
+    return {name, price, category}
+} 
 
 
 /* Task 1b: use your function to create 3 more menu items. You may add any items to the menu that you'd like */
+
+// console.log(createMenuItem('Tacos', 11, 'Lunch'))
+// console.log(createMenuItem('Fruit Cup', 3, 'Snacks'))
+// console.log(createMenuItem('Curry', 12, 'Lunch'))
 
 
 
@@ -56,12 +54,28 @@ const reviews = [{name: "Daniela", rating: 5, feedback:"Beautiful atmosphere and
 ]
 
 /* Task 3: Console.log just Julius' feedback */
+console.log(reviews[5]);
 
 
 /* Task 4: Add a new rating with your (fictitious) opinions of the restaurant in the same format as the reviews above. */
 
+// function addPlace(array, city, country, region){
+//   array.push({city, country, region});
+//   return array;
+// }
 
-/* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
+function newRating(name, rating, feedback){
+    reviews.push({name, rating, feedback});
+     return reviews;
+}
+
+console.log(newRating('Christopher', 3, 'It was a very nice place'));
+
+/* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"*/
+
+console.log(reviews)
+console.log(reviews[feedback]);
+
 
 /*  Task 6: Write a function to return a review based on the index of the review in the array.
 
@@ -76,8 +90,7 @@ and should return a string in the format `{name} gave the restaurant a {rating},
  * it will return `Daniela gave the restaurant a 5 star review and their feedback was: Beautiful atmosphere and wonderful vegan options!`
 */
 function getReviewByIndex(reviews, index) {
-    /* code here */
-  }
+}
   
 
 /* Task 7: Write a function to get information about the most recent review called `getLastReview`
@@ -149,7 +162,4 @@ The returned object should have the following characteristics:
 */
 
 
-function carMaker(/* code here */) {
-    /* code here */
-    
-}
+function carMaker(/* code here */) {}
