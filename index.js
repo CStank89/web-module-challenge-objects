@@ -103,14 +103,13 @@ and should return a string in the format `{name} gave the restaurant a {rating},
 */
 
 
-function getReviewByIndex(arr, num) {
+// function getReviewByIndex(arr, num) {
+   
+//   return  `${arr[num].name} gave the resturant a ${arr[num].rating}, and their feed back was: ${arr[num].feedback}`;
   
-  return  `${reviews[num].name} gave the resturant a ${reviews.rating}, and their feed back was: ${reviews.feedback}`;
-  
-}
-console.log(getReviewByIndex(reviews, 5));
+// }
+// console.log(getReviewByIndex(reviews, 5));
 
-// console.log(reviews[0].name);
 
 /* Task 7: Write a function to get information about the most recent review called `getLastReview`
 
@@ -123,11 +122,12 @@ For example, if getLastReview is invoked passing the reviews array it will retur
 */
 
 
-// function getLastReview(arr) {
-//     arr.lastIndexOf(reviews);
-//     return `{name} gave the restaurant a {rating}, and their feedback was: {feedback}`; 
-//   } 
-// console.log((lastIndexOf));
+function getLastReview(arr) {
+    return `${arr.name} gave the restaurant a ${arr.rating}, and their feedback was: ${arr.feedback}`; 
+  
+  }
+
+console.log(getLastReview(reviews, 4));
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
 
